@@ -1,7 +1,7 @@
 @extends('extends/globalMazaya')
 
 @section('css')
-<link href="{{URL::route('index')}}/css/pages/mazaya_list.css"  media="all" rel="stylesheet" type="text/css">
+
 @stop
 
 @section('content')
