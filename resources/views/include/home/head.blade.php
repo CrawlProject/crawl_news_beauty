@@ -13,12 +13,11 @@
 		<!-- SEO Title Tag -->
 		<title> Mazaya </title>
 		<meta content="YOUR_APPLICATION_ID" property="fb:app_id">
-		<!-- <link href="{{URL::route('index')}}/data-temp/css.css" rel="stylesheet" type="text/css">
-		<link href="{{URL::route('index')}}/data-temp/font-awesome.css" rel="stylesheet">
+		<link href="{{URL::route('index')}}/data-temp/css.css" rel="stylesheet" type="text/css">
 		<link href="{{URL::route('index')}}/data-temp/css_004.css" id="kopa-default-heading-font-css" media="all" rel="stylesheet" type="text/css">
 		<link href="{{URL::route('index')}}/data-temp/1535467126-widget_css_2_bundle.css" rel="stylesheet" type="text/css">
 		<link href="{{URL::route('index')}}/data-temp/css_002.css" rel="stylesheet" type="text/css">
 		<link href="{{URL::route('index')}}/data-temp/css_003.css" id="redux-google-fonts-css" media="all" rel="stylesheet" type="text/css">
-		 -->
+
 		<link href="{{URL::route('index')}}/css/mazaya.css"  media="all" rel="stylesheet" type="text/css">
 		

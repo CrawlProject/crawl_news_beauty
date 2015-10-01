@@ -1,73 +1,107 @@
-<div class="wrap-menu-top">
-	
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#menu">>></a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Contact</a></li>
-
-        <li class="dropdown">
-        	<a data-toggle="dropdown" >
-                Article <span class="caret"></span>
-            </a>
-    		<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-              <li><a href="#">Article 1</a></li>
-              <li><a href="#">Article 2</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-submenu">
-                <a tabindex="-1" href="#">Article group</a>
-                <ul class="dropdown-menu">
-                  <li><a tabindex="-1" href="#">group 1</a></li>
-                  <li class="dropdown-submenu">
-                    <a href="#">group 2</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">group 2.1</a></li>
-                    	<li><a href="#">group 2.2</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">group 3</a></li>
-                  <li><a href="#">group 4</a></li>
-                </ul>
-              </li>
-            </ul>
-        </li>
-      </ul>
-      
-      <!-- <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form> -->
-      
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul> -->
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-</div>
+<div id="top-nav">
+				<nav class="top-menu">
+					<ul class="menubar">
+						<li>
+							<a href="#"> Home </a>
+						</li>
+						<li>
+							<a href="#"> About </a>
+						</li>
+						<li>
+							<a href="#"> Contact </a>
+						</li>
+						<li>
+							<a href="#"> Error Page </a>
+						</li>
+					</ul>
+					<div id="searchformfix">
+						<form action="/search" id="searchform">
+							<input name="q" onblur='if (this.value == "") {this.value = "Text to Search...";}' onfocus='if (this.value == "Text to Search...") {this.value = "";}' value="Text to Search..." type="text">
+							<input value="" type="submit">
+						</form>
+					</div>
+					<!-- social media button end -->
+				</nav>
+			</div>
+			<div class="clear"></div>
+			<!-- header wrapper start -->
+			<header id="header-wrapper">
+				<div class="header section section" id="header">
+					<div class="widget Header" id="Header1">
+						<div id="header-inner">
+							<a href="http://mazaya-soratemplates.blogspot.in/" style="display: block"> <img alt="Mazaya" id="Header1_headerimg" src="{{URL::route('index')}}/data-temp/logoaaa.png" style="display: block" height="100px; " width="260px; "> </a>
+						</div>
+					</div>
+				</div>
+				<div class="header-right" id="header-right">
+					<div class="ads section" id="ads">
+						<div class="widget HTML" id="HTML133">
+							<div class="widget-content">
+								<img src="{{URL::route('index')}}/data-temp/ori_adv.png">
+							</div>
+							<div class="clear"></div>
+							<span class="widget-item-control"> <span class="item-control blog-admin"> <a class="quickedit" href="http://www.blogger.com/rearrange?blogID=7811468815270641289&amp;widgetType=HTML&amp;widgetId=HTML133&amp;action=editWidget&amp;sectionId=ads" onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML133"));' target="configHTML133" title="Edit"> <img alt="" src="{{URL::route('index')}}/data-temp/icon18_wrench_allbkg.png" height="18" width="18"> </a> </span> </span>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- header wrapper end -->
+			<div class="clear"></div>
+			<!-- secondary navigation menu end -->
+			<!-- content wrapper start -->
+			<nav id="nav">
+				<!-- secondary navigation menu start -->
+				<ul class="nav menubar2" id="menu-main">
+					<li class="">
+						<a class="active" href="{{URL::route('index')}}"> Trang chủ </a>
+					</li>
+					<li class="">
+						<a href="{{URL::route('tranglist','sao')}}"> Showbit </a>
+					</li>
+					<li class="">
+						<a class="parent" href="{{URL::route('tranglist','khoedep')}}"> Khỏe & Đẹp </a>
+						<ul>
+							<li>
+								<a href="#"> Fashion 0 </a>
+							</li>
+							<li>
+								<a href="#"> Fashion1 </a>
+							</li>
+							<li>
+								<a href="#"> Fashion2 </a>
+							</li>
+						</ul>
+					</li>
+					<li class="">
+						<a class="parent" href="{{URL::route('tranglist','giadinh')}}"> Hội tám </a>
+						<ul>
+							<li class="">
+								<a href="#"> Sub Menu 1 </a>
+							</li>
+							<li class="">
+								<a href="#"> Sub Menu 2 </a>
+							</li>
+							<li class="">
+								<a href="#"> Sub Menu 3 </a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="{{URL::route('tranglist','babau')}}"> Bà bầu khỏe & đẹp </a>
+					</li>
+					<li>
+						<a href="nuoicon"> Nuôi con </a>
+					</li>
+				</ul>
+				<select class="selectnav" id="selectnav1">
+					<option selected="selected" value="">Select Here </option><option value="http://mazaya-soratemplates.blogspot.in/"> Home </option><option value="http://mazaya-soratemplates.blogspot.in/#"> Business </option><option value="http://mazaya-soratemplates.blogspot.in/#">-
+						Fashion </option><option value="http://mazaya-soratemplates.blogspot.in/#">-
+						Fashion1 </option><option value="http://mazaya-soratemplates.blogspot.in/#">-
+						Fashion2 </option><option value="http://mazaya-soratemplates.blogspot.in/#"> Fashion </option><option value="http://mazaya-soratemplates.blogspot.in/#">-
+						Sub Menu 1 </option><option value="http://mazaya-soratemplates.blogspot.in/#">-
+						Sub Menu 2 </option><option value="http://mazaya-soratemplates.blogspot.in/#">-
+						Sub Menu 3 </option><option value="http://mazaya-soratemplates.blogspot.in/#"> Sports </option><option value="http://mazaya-soratemplates.blogspot.in/#"> Games </option><option value="http://mazaya-soratemplates.blogspot.in/#"> Technology </option><option value="http://www.soratemplates.com/2015/02/mazaya-blogger-templates.html"> Download This Template </option>
+				</select>
+			</nav>
+			<div class="clear"></div>
