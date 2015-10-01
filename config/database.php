@@ -76,10 +76,10 @@ return [
 		// ],
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
+			'host'      => '54.254.170.8',
 			'database'  => 'wd_crawl_news_db',
 			'username'  => 'root',
-			'password'  => '',
+			'password'  => 'root',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
